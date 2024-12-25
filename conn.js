@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/MallDataManage")
+mongoose.connect("mongodb+srv://userayush:1234@cluster0.p7zfp.mongodb.net/MallDataManage")
   .then(() => {
     console.log("Connection Successful");
   })
