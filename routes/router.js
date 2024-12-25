@@ -683,7 +683,7 @@ router.post('/sendResponse', async (req, res) => {
 
 const mailOptions = {
       from: "ayushrai803@gmail.com",
-      to: "ayushrai803@gmail.com",
+      to: `${userEmail}`,
       subject: "ShopEasy",
       html: `
   <p>Dear User,</p>
@@ -793,7 +793,6 @@ router.get('/topSellingProducts', async (req, res) => {
     res.status(500).json({ message: 'Error fetching top-selling products', error });
   }
 });
-
 
 router.get('/salesByCategory', async (req, res) => {
   try {
